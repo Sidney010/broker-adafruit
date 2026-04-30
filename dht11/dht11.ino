@@ -13,7 +13,7 @@
 DHT dht(DHTPIN, DHTTYPE);
 
 // ====== URL DA API (Render) ======
-String serverName = "https://api-sensor.onrender.com/sensor";
+String serverName = "https://broker-adafruit.onrender.com/sensor";
 
 // ====== CONTROLE ======
 float ultimaTemp    = -1000;
@@ -65,7 +65,7 @@ void loop() {
   Serial.print(" | Umidade: ");
   Serial.print(hum);
 
-  HTTPClient htpp;
+  HTTPClient http;
 
   // monta URL com parametros
   String url = serverName + "?temp=" + String(temp) + "&hum=" + String(hum);

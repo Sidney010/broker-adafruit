@@ -4,7 +4,7 @@ const app = express();
 let dados = []; // Armazenamento de memória
 
 app.get("/sensor", (req, res) => {
-    const { temp, hum } = res.query;
+    const { temp, hum } = req.query;
 
     if(!temp || !hum){
         return res.status(400).send("Dados inválidos");
