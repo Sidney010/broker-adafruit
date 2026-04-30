@@ -2,5 +2,16 @@
   "dependencies": {
     "express": "^5.2.1",
     "started": "node.js"
-  }
+  },
+  "name": "conexao_mqtt_adafruit",
+  "version": "1.0.0",
+  "description": "Criação de circuito Esp32 com conexão MQTT | Broker Adafruit",
+  "main": "server.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC"
 }
