@@ -1,7 +1,7 @@
 {
   "dependencies": {
-    "express": "^5.2.1",
-    "started": "node.js"
+    "started": "node.js",
+    "express": "^5.2.1"
   },
   "name": "conexao_mqtt_adafruit",
   "version": "1.0.0",
